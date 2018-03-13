@@ -1,0 +1,11 @@
+version: '2'
+services:
+  mydt:
+    image: "docker-vbuntu"
+    hostname: "mydt"
+    ports:
+      - "33899:3389"
+#      - "60811:6081"
+    volumes:
+      - ${HOME}/dhv/vbuntu/root:/root
+      - ${HOME}/work:/root/work
