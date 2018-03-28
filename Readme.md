@@ -26,7 +26,7 @@
 
 따라서 이번에 NOVNC를 통한 웹브라우저를 제외하고 다른 작업을 하고 성공을 하여 올려봅니다.
 
-## [docker-xfce](https://github.com/mcchae/docker-xfce) 작업 내용
+## docker-vbuntu
 
 * Asia/Seoul 타임존 설정
 * 한글 입력 환경 (터미널, FireFox 등)
@@ -37,6 +37,7 @@
 * 로그아웃 기능이 안되는 것을 수정해 놓았습니다.
 * Xface의 디폴트 패널을 LXDE의 것과 최대한 유사하게 만들어 놓았습니다. (하단 1개의 패널)
 * Firefox 웹브라우저를 설치했습니다. 
+* LibreOffice 를 설치했습니다.
 
 그리고 외부에 노출되는 포트 및, 이용할 수 있는 서비스 입니다.
 
