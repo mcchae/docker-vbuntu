@@ -1,7 +1,7 @@
 version: '2'
 services:
   mydt:
-    image: "docker-vbuntu"
+    image: "mcchae/vbuntu"
     hostname: "mydt"
     ports:
       - "33899:3389"
