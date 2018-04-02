@@ -4,7 +4,7 @@ services:
     image: "mcchae/vbuntu"
     hostname: "mydt"
     ports:
-      - "33899:3389"
+      - "33896:3389"
 #      - "60811:6081"
     volumes:
       - ${HOME}/dhv/vbuntu/root:/root

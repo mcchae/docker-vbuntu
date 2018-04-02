@@ -27,7 +27,7 @@ RUN apt-get update \
         fonts-nanum fonts-nanum-coding uim uim-byeoru im-config zenity \
         git sudo dbus udev xauth supervisor firefox \
         build-essential python3 python3-dev python3-pip \
-        wget tmux vim libreoffice \
+        wget tmux vim libreoffice chromium-browser \
     && apt-get -y upgrade \
     && apt-get -y purge xscreensaver \
     && apt-get -y autoremove \
