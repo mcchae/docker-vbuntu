@@ -1,0 +1,11 @@
+addons:
+    apt:
+        packages:
+            - bash
+            - zsh
+            - dash
+            - fish
+            - ksh
+            - csh
+            - make
+script: make test

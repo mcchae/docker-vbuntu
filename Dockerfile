@@ -11,20 +11,20 @@ RUN apt-get  update \
 # set root password
 RUN echo "root:r" | /usr/sbin/chpasswd
 
-# set timezone
-ENV TZ=Asia/Seoul
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+## set timezone
+#ENV TZ=Asia/Seoul
+#RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-# Language/locale settings
-ENV LANG=ko_KR.UTF-8
-RUN echo "ko_KR.UTF-8 UTF-8" > /etc/locale.gen \
-    && echo "LANG=ko_KR.UTF-8" > /etc/default/locale \
-    && apt-get install -y locales
+## Language/locale settings
+#ENV LANG=ko_KR.UTF-8
+#RUN echo "ko_KR.UTF-8 UTF-8" > /etc/locale.gen \
+#    && echo "LANG=ko_KR.UTF-8" > /etc/default/locale \
+#    && apt-get install -y locales
 
 #COPY sources.list /etc/apt/sources.list
 RUN apt-get update \
     && apt-get install -y xrdp xvfb xfce4 slim lxterminal \
-        fonts-nanum fonts-nanum-coding uim uim-byeoru im-config zenity \
+#        fonts-nanum fonts-nanum-coding uim uim-byeoru im-config zenity \
         git sudo dbus udev xauth supervisor firefox \
         build-essential python3 python3-dev python3-pip \
         wget tmux vim libreoffice chromium-browser \
